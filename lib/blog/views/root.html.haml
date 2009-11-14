@@ -2,26 +2,21 @@
 
 - content_block :content do
 
-  %h1 Welcome to the Pancake Blog
-
   %div
     This is a simple blog that will serve as a battleground for developing and testing this delicious framework.
 
-  - v.blog_entries.each do |entry|
-    %h2= entry
-    %div= entry.body
-    %hr{:width => '75%'}
+  = partial :summary, :with => v.blog_entries
 
   %form{:action => '/', :method => 'post'}
     %div
       %label{:for => 'blog_entry_title'} Title
       %div
         %input{:id => 'blog_entry_title', :type => 'text', :name => 'blog_entry[title]', :size => 30}
-      
+
     %div
       %label{:for => 'blog_entry_body'} Body
       %div
         %textarea{:id => 'blog_entry_body', :name => 'blog_entry[body]', :rows => 8, :cols => 60}
-   
+
     %input{:type => 'submit', :value => "Create"}
 

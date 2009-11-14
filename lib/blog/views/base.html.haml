@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title
+      - content_block(:title) do
+        Welcome to the Pancake Blog
+
+  %body
+
+    -content_block :header do
+      %h1 Welcome the the Pancake Blog
+
+    -content_block :content do
+      This is a simple blog engine for Pancake
+
+    -content_block :footer do
+      .footer
+        End Of the Blog
+

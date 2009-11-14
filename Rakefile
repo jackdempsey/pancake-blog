@@ -22,6 +22,7 @@ end
 require File.join(File.dirname(__FILE__), "lib", "blog")
 Pancake.root = Pancake.get_root(__FILE__, "lib", "blog")
 THIS_STACK = Blog
+Blog.stackup(:master => true)
 Blog.load_rake_tasks!
 
 require 'spec/rake/spectask'
