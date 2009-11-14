@@ -1,3 +1,4 @@
+require 'pancake'
 require 'active_record'
 
 class Blog < Pancake::Stacks::Short

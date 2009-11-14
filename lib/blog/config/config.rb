@@ -7,6 +7,7 @@ class Blog
   # stack(:middleware_name, :labels => [:development, :production]).use(MiddlewareClass)
 
   class self::Configuration
+    default :blog_title, "Pancake Blog", "A simple title for the blog"
     # Add defaults to your stack configuration.
     # This is scoped to this stack, and is inhertied into child stacks
     #

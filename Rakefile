@@ -6,10 +6,10 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "blog"
-    gem.summary = %Q{TODO}
-    gem.email = "TODO"
-    gem.homepage = "TODO"
-    gem.authors = ["TODO"]
+    gem.summary = %Q{Simple blog engine on pancake}
+    gem.email = "jackdempsey@example.com"
+    gem.homepage = "http://github.com/jackdempsey/pancake-blog"
+    gem.authors = ["Jack Dempsey"]
     gem.add_dependency "pancake", ">=0.1.8"
     gem.files = FileList["[A-Z]*", "pancake.init", "{lib,spec,rails}/**/*"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
@@ -22,8 +22,7 @@ end
 require File.join(File.dirname(__FILE__), "lib", "blog")
 Pancake.root = Pancake.get_root(__FILE__, "lib", "blog")
 THIS_STACK = Blog
-Blog.stackup(:master => true)
-Blog.load_rake_tasks!
+Blog.load_rake_tasks!(:master => true)
 
 require 'spec/rake/spectask'
 Spec::Rake::SpecTask.new(:spec) do |spec|

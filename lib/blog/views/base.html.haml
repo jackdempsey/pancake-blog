@@ -3,12 +3,16 @@
   %head
     %title
       - content_block(:title) do
-        Welcome to the Pancake Blog
+        Welcome to
+        = configuration.blog_title
 
   %body
 
     -content_block :header do
-      %h1 Welcome the the Pancake Blog
+      %h1
+        Welcome the the
+        = configuration.blog_title
+
 
     -content_block :content do
       This is a simple blog engine for Pancake
