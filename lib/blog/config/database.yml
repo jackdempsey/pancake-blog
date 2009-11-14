@@ -1,0 +1,13 @@
+development: &defaults
+  adapter: mysql
+  host: localhost
+  username: root
+  password:
+  database: pancake_blog_development
+  encoding: utf8
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
