@@ -5,9 +5,9 @@
   %div
     This is a simple blog that will serve as a battleground for developing and testing this delicious framework.
 
-  = partial :summary, :with => v.blog_entries
+  = partial :summary, :with => v.blog_entries, :as => "summary"
 
-  %form{:action => '/', :method => 'post'}
+  %form{:action => url(:home), :method => 'post'}
     %div
       %label{:for => 'blog_entry_title'} Title
       %div

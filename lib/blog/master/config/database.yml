@@ -4,7 +4,6 @@ development: &defaults
   username: root
   password:
   database: pancake_blog_development
-  encoding: utf8
 
 test:
   <<: *defaults

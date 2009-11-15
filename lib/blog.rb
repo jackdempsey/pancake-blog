@@ -1,5 +1,5 @@
 require 'pancake'
-require 'active_record'
+require 'dm-core'
 
 class Blog < Pancake::Stacks::Short
   add_root(__FILE__, "blog")
