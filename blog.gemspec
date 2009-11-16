@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
      "lib/blog/blog.rb",
      "lib/blog/config.ru",
      "lib/blog/config/config.rb",
+     "lib/blog/config/database.yml",
      "lib/blog/config/environments/development.rb",
      "lib/blog/config/environments/production.rb",
      "lib/blog/config/environments/staging.rb",
