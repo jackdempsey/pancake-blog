@@ -7,7 +7,7 @@
 
   = partial :summary, :with => v.blog_entries
 
-  %form{:action => '/', :method => 'post'}
+  %form{:action => url(:home), :method => 'post'}
     %div
       %label{:for => 'blog_entry_title'} Title
       %div
